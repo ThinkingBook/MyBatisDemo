@@ -16,15 +16,10 @@ public class MyTest {
         //List<User> users = session.selectList("com.kuang.mapper.UserMapper.selectUser");
         //方法二:
         UserMapper mapper = session.getMapper(UserMapper.class);
-//        List<User> users = mapper.selectUser();
-//        for (User user: users){
-//            System.out.println(user);
-//        }
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("username","李四");
-        map.put("pwd","987654");
-        User user = mapper.selectUserByNP2(map);
-        System.out.println(user);
+        List<User> users = mapper.selectUser();
+        for (User user: users){
+            System.out.println(user);
+        }
         session.close();
     }
 }

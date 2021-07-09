@@ -8,16 +8,4 @@
     <select id="selectUser" resultType="com.thinkbook.pojo.User">
         select * from user
     </select>
-    <!--根据id查询用户-->
-    <select id="selectUserById" resultType="com.thinkbook.pojo.User">
-        select * from user where id = #{id}
-    </select>
-
-    <select id="selectUserByNP" resultType="com.thinkbook.pojo.User">
-        select * from user where name = #{username} and pwd = #{pwd}
-    </select>
-
-    <select id="selectUserByNP2" parameterType="map" resultType="com.thinkbook.pojo.User">
-        select * from user where name = #{username} and pwd = #{pwd}
-    </select>
 </mapper>
