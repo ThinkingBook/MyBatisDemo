@@ -13,6 +13,10 @@
                 <property name="password" value="root"/>
             </dataSource>
         </environment>
+        <environment id="">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
     </environments>
     <mappers>
         <mapper resource="com/thinkbook/dao/userMapper.xml"/>

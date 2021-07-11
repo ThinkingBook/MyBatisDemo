@@ -22,4 +22,6 @@ public interface UserMapper {
     int updateUser(User user);
     //删除数据
     int delUser(int id);
+    //like姓名查询用户
+    List<User> selectUserByNameLike(String name);
 }
